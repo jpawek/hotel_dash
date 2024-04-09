@@ -62,6 +62,14 @@ pre {
   border: 1px solid black;
   width: 130px;
   height: 130px;
+  background-color: #FCDD00;
+}
+
+.inspected_room {
+  margin: 0.4rem;
+  border: 1px solid black;
+  width: 130px;
+  height: 130px;
   background-color: #71D520;
 }
 
@@ -86,6 +94,15 @@ pre {
   text-indent: 5px;
   text-align: center;
   line-height: 100%;
+}
+
+.due_out {
+  font-size: 75%;
+  font-weight: 900;
+  text-indent: 5px;
+  text-align: center;
+  line-height: 100%;
+  color: #E52F14;
 }
 
 @media screen and (min-width: 600px) {

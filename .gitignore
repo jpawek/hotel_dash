@@ -38,3 +38,4 @@ next-env.d.ts
 # StayNTouch test env API access
 /src/api/data-collection/route.js
 
+.env
