@@ -1,7 +1,6 @@
 import type { NextAuthConfig } from 'next-auth';
  
 export const authConfig = {
-  secret: 'test',
   pages: {
     signIn: '/login',
   },
@@ -11,7 +10,7 @@ export const authConfig = {
       const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
       if (isOnDashboard) {
         if (isLoggedIn) return true;
-        return Response.redirect(new URL('/dashboard', nextUrl));
+        return false;
       } else if (isLoggedIn) {
         return Response.redirect(new URL('/dashboard', nextUrl));
       }

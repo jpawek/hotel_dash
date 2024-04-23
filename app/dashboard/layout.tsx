@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import React from 'react';
-import "@/app/ui/global.css";
+import "../ui/global.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <h1>DASHBOARD TEST</h1>
+        {children}
+      </body>
     </html>
   );
 }

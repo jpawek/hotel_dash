@@ -5,11 +5,6 @@ import { redirect } from 'next/navigation';
 
 export default function HomePage() {
 
-    const Auth = false;
-    if (!Auth) {
-        redirect("/login")
-    }
-
     const [roomData, setData] = useState([]);
 
     async function fetchData() {

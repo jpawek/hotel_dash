@@ -8,7 +8,7 @@ export default function HomePage() {
 
     async function fetchData() {
         fetch("./api/data-collection", { cache: 'no-store' })
-        .then((response) => response.json())
+        .then((response) => JSON.parse(response))
         .then((data) => setData(data))
     }
 
